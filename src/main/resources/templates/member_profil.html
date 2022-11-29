@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>프로필 생성</title>
+
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="/home/css/styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="my-3">
+  <div>
+    <a class="navbar-brand" href="/"><h2>Diary</h2></a>
+  </div>
+</div>
+<form action="/member/new/profil" method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="file" class="form-label">프로필 사진</label>
+    <input type="file" name="file1" class="form-control">
+  </div>
+  <div class="navbar-brand">
+    <label for="profilName" class="form-label">별명</label>
+    <input type="text" name="profilName" class="form-control">
+  </div>
+  <div class="navbar-brand">
+    <label for="profilTalk" class="form-label">한마디</label>
+    <input type="text" name="profilTalk" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">생성완료</button>
+</form>
+</body>
+
+</html>

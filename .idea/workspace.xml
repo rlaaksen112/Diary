@@ -5,173 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80747417-79db-4aa5-8294-140db11fcf9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/HomeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/MemberController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/DiaryApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Board.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/DataNotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Member.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/MemberCreateForm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Text.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/TextCreateForm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Repository/BoardRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Repository/MemberRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Repository/TextRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Security/SecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Security/UserRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Security/UserSecurityService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/BoardService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/MemberService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/TextService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/9413d732-f9d5-43a2-ac83-2bc39f2ee9a6_lens1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_Search Results for “patrick star desktop wallpaper” – Adorable Wallpapers.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_Tyler The Creator Wallpaper - Wallpaper Sun.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_bear wallpaper pc Mac 네이버 아이콘 곰.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_lens4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_lockscreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_✧･ﾟ_ _✧aesthetic magical sparkle ✧･ﾟ_ _✧.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/about/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/about/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/about/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/about/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/close-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/logos/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/logos/google.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/logos/ibm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/logos/microsoft.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/map-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/navbar-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/portfolio/Main1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/portfolio/Main2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/portfolio/Main3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/portfolio/Main4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/portfolio/Main5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/portfolio/Main6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/team/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/team/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/assets/img/team/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/form_errors.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/login_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/member_board.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/member_board2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/member_boardlist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/member_create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/member_myhome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/member_newedit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/DiaryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/DataNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/MemberCreateForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Text.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/TextCreateForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/BoardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/TextRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Security/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Security/UserSecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/TextService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/9413d732-f9d5-43a2-ac83-2bc39f2ee9a6_lens1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_Search Results for “patrick star desktop wallpaper” – Adorable Wallpapers.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_Tyler The Creator Wallpaper - Wallpaper Sun.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_bear wallpaper pc Mac 네이버 아이콘 곰.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_lens4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_lockscreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/a7c6d23a-9d57-490b-afaa-9e0efee1c2cc_✧･ﾟ_ _✧aesthetic magical sparkle ✧･ﾟ_ _✧.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/b75fd1f8-aa50-4eec-8dcb-a216f22f479c_lens6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/fe814f79-58e0-46da-bb1a-b45f433d7405_Main6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/about/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/about/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/about/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/about/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/close-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/logos/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/logos/google.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/logos/ibm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/logos/microsoft.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/map-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/navbar-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/portfolio/Main1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/portfolio/Main2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/portfolio/Main3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/portfolio/Main4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/portfolio/Main5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/portfolio/Main6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/team/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/team/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/assets/img/team/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/form_errors.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member_board.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member_board2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member_boardlist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member_create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member_myhome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member_newedit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/min/diary/DiaryApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member_profil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +24,13 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -190,13 +38,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ICqy0yUsjnr1FYGhXVvuyko1xx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -225,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669696165630</updated>
-      <workItem from="1669696166901" duration="1148000" />
+      <workItem from="1669696166901" duration="3583000" />
     </task>
     <servers />
   </component>

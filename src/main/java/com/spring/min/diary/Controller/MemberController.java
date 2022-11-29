@@ -126,6 +126,15 @@ public class MemberController {
 
         return "redirect:/";
     }
+
+    @GetMapping("/new/profil")
+    public String newprofil(){
+
+        return "member_profil";
+    }
+
+
+
     // -----------------------------------------------------------------------------
     @GetMapping("/boardlist/{memberId}")    //게시물 리스트
     public String boardList(@PathVariable("memberId") String memberId,Model model){
