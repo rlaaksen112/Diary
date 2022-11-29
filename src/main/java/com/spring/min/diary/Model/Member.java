@@ -39,4 +39,7 @@ public class Member {
 
     @OneToMany(mappedBy = "member")
     private List<Text> texts;
+
+    @OneToMany(mappedBy = "member")
+    private List<Profil> profils;
 }

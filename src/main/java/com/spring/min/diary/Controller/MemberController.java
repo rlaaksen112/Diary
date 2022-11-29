@@ -4,6 +4,7 @@ package com.spring.min.diary.Controller;
 import com.spring.min.diary.Model.*;
 import com.spring.min.diary.Service.BoardService;
 import com.spring.min.diary.Service.MemberService;
+import com.spring.min.diary.Service.ProfilService;
 import com.spring.min.diary.Service.TextService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -27,7 +28,7 @@ public class MemberController {
     private final MemberService memberService;
     private final TextService textService;
     private final BoardService boardService;
-
+    private final ProfilService profilService;
 
     @GetMapping("/create")  //회원가입 페이지
     public String MemberCreate(MemberCreateForm memberCreateForm) {
@@ -124,13 +125,20 @@ public class MemberController {
 
         this.boardService.create2(file1,file2,file3,file4,file5,file6,principal);
 
-        return "redirect:/";
+        return "redirect:/member/new/profil";
     }
 
     @GetMapping("/new/profil")
-    public String newprofil(){
+    public String newprofil(Principal principal){
 
         return "member_profil";
+    }
+    @PostMapping("/new/profil")
+    public String newprofil2(MultipartFile file,String profilName,String profilTalk, Principal principal)throws Exception{
+
+        this.profilService.create(profilName, profilTalk , file , principal);
+
+        return "redirect:/";
     }
 
 
