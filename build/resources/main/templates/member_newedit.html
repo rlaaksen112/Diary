@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지 생성</title>
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/home/css/styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="my-3">
+    <div>
+        <a class="navbar-brand" href="/"><h2>Diary</h2></a>
+    </div>
+</div>
+<form th:action="@{/member/new/edit}" th:object="${textCreateForm}" method="post">
+    <div th:replace="form_errors :: formErrorsFragment"></div>
+    <div class="navbar-brand">
+        <label for="mainTitle" class="form-label">메인 타이틀</label>
+        <input type="text" th:field="*{mainTitle}" class="form-control">
+    </div>
+    <div class="navbar-brand">
+        <label for="mainContents" class="form-label">메인 내용</label>
+        <input type="text" th:field="*{mainContents}" class="form-control">
+    </div>
+    <div class="navbar-brand">
+        <label for="dailyTitle" class="form-label">데일리 타이틀</label>
+        <input type="text" th:field="*{dailyTitle}" class="form-control">
+    </div>
+    <div class="navbar-brand">
+        <label for="dailyContents" class="form-label">데일리 내용</label>
+        <input type="text" th:field="*{dailyContents}" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">만들기</button>
+</form>
+</body>
+
+</html>
