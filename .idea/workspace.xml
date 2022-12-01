@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80747417-79db-4aa5-8294-140db11fcf9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Dboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/DboardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/DboardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,32 +17,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/TextService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/TextService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/0cf6d39c-7759-41c4-a34b-01efb7dc448c_lens7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/7f43f6c3-3b5f-45de-bb87-f0988119fadd_lens7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/MemberController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Chat/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Chat/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Member/member_board.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_board.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Member/member_board2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_board2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Member/member_boardlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_boardlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Member/member_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/TextService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/TextService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/0cf6d39c-7759-41c4-a34b-01efb7dc448c_lens7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/3d01c539-d071-4079-b6e6-cd41ef599b76_lens6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/7f43f6c3-3b5f-45de-bb87-f0988119fadd_lens7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/member_boardlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_boardlist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,32 +56,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kimminjae/Desktop/project/diary/src/main/resources/static&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;035470d9414646e604d1b1c8872bfb80&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/kimminjae/Desktop/project/diary/src/main/resources/static",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "035470d9414646e604d1b1c8872bfb80"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates/Member" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spring.min.diary.Model" />
     </key>
   </component>
   <component name="RunManager">
@@ -124,7 +111,8 @@
       <workItem from="1669704865128" duration="28000" />
       <workItem from="1669709987547" duration="58000" />
       <workItem from="1669710255302" duration="18127000" />
-      <workItem from="1669864935584" duration="3027000" />
+      <workItem from="1669864935584" duration="3213000" />
+      <workItem from="1669872597273" duration="6187000" />
     </task>
     <servers />
   </component>
@@ -141,6 +129,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

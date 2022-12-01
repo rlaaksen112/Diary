@@ -2,10 +2,7 @@ package com.spring.min.diary.Controller;
 
 
 import com.spring.min.diary.Model.*;
-import com.spring.min.diary.Service.BoardService;
-import com.spring.min.diary.Service.MemberService;
-import com.spring.min.diary.Service.ProfilService;
-import com.spring.min.diary.Service.TextService;
+import com.spring.min.diary.Service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
@@ -29,7 +26,10 @@ public class MemberController {
     private final TextService textService;
     private final BoardService boardService;
     private final ProfilService profilService;
+    private final DboardService dboardService;
 
+    // -----------------------------------------------------------------------------
+    // 회원가입 및 로그인
     @GetMapping("/create")  //회원가입 페이지
     public String MemberCreate(MemberCreateForm memberCreateForm) {
 
@@ -61,14 +61,17 @@ public class MemberController {
 
         return "redirect:/";
     }
-    // -----------------------------------------------------------------------------
+
     @GetMapping("/login")   //로그인 페이지
     public String login() {
         return "Member/login_form";
     }
 
+
+
     // -----------------------------------------------------------------------------
-    @GetMapping("/myhome/{memberId}")   //마이홈
+    //마이홈
+    @GetMapping("/myhome/{memberId}")
     public String myhome(@PathVariable("memberId") String memberId,Model model,Principal principal) {
         Text text = this.textService.getmemberId(memberId); //메인,데일리 타이틀 및 내용
         model.addAttribute("text",text);
@@ -91,7 +94,8 @@ public class MemberController {
         return "Member/member_myhome";
     }
     // -----------------------------------------------------------------------------
-    @GetMapping("/new/edit")        //최초 홈페이지 생성
+    //최초 홈페이지 생성
+    @GetMapping("/new/edit")
     public String edit(TextCreateForm textCreateForm, Principal principal) {
         if (principal == null) {
             return "redirect:/member/login";
@@ -100,7 +104,7 @@ public class MemberController {
         return "Member/member_newedit";
     }
 
-    @PostMapping("/new/edit")
+    @PostMapping("/new/edit")   //문구 등록
     public String editForm(@Valid TextCreateForm textCreateForm, Principal principal, BindingResult bindingResult) {
         if (principal == null) {
             return "redirect:/member/login";
@@ -114,13 +118,13 @@ public class MemberController {
         return "redirect:/member/new/board";
     }
 
-    @GetMapping("/new/board")
+    @GetMapping("/new/board")   //피드 등록
     public String newboard(MultipartFile file1, MultipartFile file2, MultipartFile file3, MultipartFile file4, MultipartFile file5, MultipartFile file6,Principal principal){
 
         return "Member/member_board2";
     }
 
-    @PostMapping("/new/board")
+    @PostMapping("/new/board")  //피드 등록
     public String newboard2(MultipartFile file1, MultipartFile file2, MultipartFile file3, MultipartFile file4, MultipartFile file5, MultipartFile file6,Principal principal) throws Exception {
 
         this.boardService.create2(file1,file2,file3,file4,file5,file6,principal);
@@ -128,12 +132,12 @@ public class MemberController {
         return "redirect:/member/new/profil";
     }
 
-    @GetMapping("/new/profil")
+    @GetMapping("/new/profil")  //프로필 등록
     public String newprofil(Principal principal){
 
         return "Member/member_profil";
     }
-    @PostMapping("/new/profil")
+    @PostMapping("/new/profil") //프로필 등록
     public String newprofil2(MultipartFile file,String profilName,String profilTalk, Principal principal)throws Exception{
 
         this.profilService.create(profilName, profilTalk , file , principal);
@@ -144,25 +148,35 @@ public class MemberController {
 
 
     // -----------------------------------------------------------------------------
-    @GetMapping("/boardlist/{memberId}")    //게시물 리스트
+    // 데일리 보드
+    @GetMapping("/boardlist/{memberId}")    //데일리 보드 리스트
     public String boardList(@PathVariable("memberId") String memberId,Model model){
-        List<Board> boardList = this.boardService.getAllList(memberId);
+        List<Dboard> boardList = this.dboardService.getAllList(memberId);
         model.addAttribute("boardList",boardList);
 
         return "Member/member_boardlist";
     }
-    // -----------------------------------------------------------------------------
-    @GetMapping("/board")
+    @GetMapping("/board")   //데일리보드 등록 폼
     public String board(Board board){
 
         return "Member/member_board";
     }
     @PostMapping("/board")
-    public String boardForm(Board board, MultipartFile file,Principal principal) throws  Exception{
+    public String boardForm(Dboard dboard, MultipartFile file,Principal principal) throws  Exception{
 
-        this.boardService.create(board,file,principal);
+        this.dboardService.create(dboard,file,principal);
 
         return "Member/member_board";
+    }
+    @GetMapping("/board/modify/{id}")   //게시물 수정
+    public String modify(){
+
+        return "redirect:/member/boardlist/{memberId}";
+    }
+    @GetMapping("/board/delete/{id}")
+    public String delete(@PathVariable("id") Integer id,Principal principal){
+        this.dboardService.delete(id);
+        return "redirect:/member/myhome/{memberId}";
     }
     // -----------------------------------------------------------------------------
 }

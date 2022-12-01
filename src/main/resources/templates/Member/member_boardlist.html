@@ -26,8 +26,12 @@
     <table class="table">
         <thead class="bg-warning">
         <tr>
-            <th>게시물</th>
+            <th>순반</th>
+            <th>제목</th>
             <th>내용</th>
+            <th>작성 일자</th>
+            <th>게시물 수정</th>
+            <th>게시물 삭제</th>
         </tr>
         </thead>
         <tbody>
@@ -36,7 +40,20 @@
             <td>
                 <a href="#" th:text="${boardList.title}"></a>
             </td>
+            <td>
+                <a href="#" th:text="${boardList.content}"></a>
+            </td>
+            <td>
+                <a href="#" th:text="${boardList.createDate}"></a>
+            </td>
+            <td>
+                <a th:href="@{|/member/board/modify/${boardList.Id}|}">수정</a>
+            </td>
+            <td>
+                <a th:href="@{|/member/board/delete/${boardList.Id}|}">삭제</a>
+            </td>
         </tr>
+        <a href="/member/board">게시물 작성</a>
         </tbody>
     </table>
 </div>
