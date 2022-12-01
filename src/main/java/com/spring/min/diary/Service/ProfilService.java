@@ -48,6 +48,24 @@ public class ProfilService {
         this.profilRepository.save(q);
     }
 
+    public Profil getAll(Principal principal){
+        Optional<Member> _member = this.memberRepository.findByMemberId(principal.getName());
+        if(_member.isPresent()){
+            _member.get();
+        }else {
+            throw new DataNotFoundException("member not found");
+        }
+        Member member = _member.get();
+        Optional<Profil> _profil = this.profilRepository.findByMember(member);
+        if(_profil.isPresent()){
+            _profil.get();
+        }else{
+            throw new DataNotFoundException("profil not found");
+        }
+        Profil profil = _profil.get();
+        return profil;
+    }
+
 
 
 }

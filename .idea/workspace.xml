@@ -5,23 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80747417-79db-4aa5-8294-140db11fcf9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Dboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/DboardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/DboardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_dboard_modify.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Chat/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Chat/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Repository/ProfilRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Repository/ProfilRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/BoardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/DboardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/DboardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/ProfilService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/ProfilService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/TextService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/TextService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Member/member_myhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_myhome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/member_boardlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_boardlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/ProfilRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/ProfilRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/DboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/DboardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/ProfilService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/ProfilService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/TextService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/TextService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/member_myhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_myhome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +44,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -112,7 +120,7 @@
       <workItem from="1669709987547" duration="58000" />
       <workItem from="1669710255302" duration="18127000" />
       <workItem from="1669864935584" duration="3213000" />
-      <workItem from="1669872597273" duration="6187000" />
+      <workItem from="1669872597273" duration="11834000" />
     </task>
     <servers />
   </component>
@@ -129,17 +137,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

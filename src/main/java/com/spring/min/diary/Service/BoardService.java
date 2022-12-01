@@ -146,8 +146,8 @@ public class BoardService {
     }
 
 
-public Board getfindIdAndTitle(String a,String memberId) {      //피드 1~6
-    Optional<Member> _member = this.memberRepository.findByMemberId(memberId);
+public Board getfindIdAndTitle(String a,Principal principal) {      //피드 1~6
+    Optional<Member> _member = this.memberRepository.findByMemberId(principal.getName());
     if(_member.isPresent()){
         _member.get();
     }else{

@@ -5,6 +5,7 @@ import com.spring.min.diary.Model.*;
 import com.spring.min.diary.Service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -71,26 +72,26 @@ public class MemberController {
 
     // -----------------------------------------------------------------------------
     //마이홈
-    @GetMapping("/myhome/{memberId}")
-    public String myhome(@PathVariable("memberId") String memberId,Model model,Principal principal) {
-        Text text = this.textService.getmemberId(memberId); //메인,데일리 타이틀 및 내용
+    @GetMapping("/myhome")
+    public String myhome(Model model,Principal principal) {
+        Text text = this.textService.getmemberId(principal); //메인,데일리 타이틀 및 내용
         model.addAttribute("text",text);
 
-        Member memberList = this.memberService.getPrincipalId(principal); //네비바 정보
-        model.addAttribute("memberList",memberList);
-
-        Board board1 = this.boardService.getfindIdAndTitle("1",memberId); //피드 사진
-        Board board2 = this.boardService.getfindIdAndTitle("2",memberId);
-        Board board3 = this.boardService.getfindIdAndTitle("3",memberId);
-        Board board4 = this.boardService.getfindIdAndTitle("4",memberId);
-        Board board5 = this.boardService.getfindIdAndTitle("5",memberId);
-        Board board6 = this.boardService.getfindIdAndTitle("6",memberId);
+        Board board1 = this.boardService.getfindIdAndTitle("1",principal); //피드 사진
+        Board board2 = this.boardService.getfindIdAndTitle("2",principal);
+        Board board3 = this.boardService.getfindIdAndTitle("3",principal);
+        Board board4 = this.boardService.getfindIdAndTitle("4",principal);
+        Board board5 = this.boardService.getfindIdAndTitle("5",principal);
+        Board board6 = this.boardService.getfindIdAndTitle("6",principal);
         model.addAttribute("board1", board1);
         model.addAttribute("board2", board2);
         model.addAttribute("board3", board3);
         model.addAttribute("board4", board4);
         model.addAttribute("board5", board5);
         model.addAttribute("board6", board6);
+
+        Profil profil = this.profilService.getAll(principal);
+        model.addAttribute("profil",profil);
         return "Member/member_myhome";
     }
     // -----------------------------------------------------------------------------
@@ -149,9 +150,9 @@ public class MemberController {
 
     // -----------------------------------------------------------------------------
     // 데일리 보드
-    @GetMapping("/boardlist/{memberId}")    //데일리 보드 리스트
-    public String boardList(@PathVariable("memberId") String memberId,Model model){
-        List<Dboard> boardList = this.dboardService.getAllList(memberId);
+    @GetMapping("/boardlist")    //데일리 보드 리스트
+    public String boardList(Model model,Principal principal){
+        List<Dboard> boardList = this.dboardService.getAllList(principal);
         model.addAttribute("boardList",boardList);
 
         return "Member/member_boardlist";
@@ -168,15 +169,20 @@ public class MemberController {
 
         return "Member/member_board";
     }
-    @GetMapping("/board/modify/{id}")   //게시물 수정
-    public String modify(){
+//    @GetMapping("/board/modify/{id}")   //게시물 수정
+//    public String modify(@PathVariable("id") Integer id , Principal principal,Dboard dboard){
+//        return "Member/member_dboard_modify";
+//    }
+//    @PostMapping("/board/modify/{id}")
+//    public String modify2(@PathVariable("id") Integer id , MultipartFile file,Dboard dboard)throws Exception{
+//        this.dboardService.modify(id,file,dboard);
+//        return "redirect:/member/boardlist";
+//    }
 
-        return "redirect:/member/boardlist/{memberId}";
-    }
     @GetMapping("/board/delete/{id}")
     public String delete(@PathVariable("id") Integer id,Principal principal){
         this.dboardService.delete(id);
-        return "redirect:/member/myhome/{memberId}";
+        return "redirect:/member/boardlist";
     }
     // -----------------------------------------------------------------------------
 }

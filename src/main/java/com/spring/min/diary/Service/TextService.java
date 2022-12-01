@@ -37,8 +37,8 @@ public class TextService {
     }
 
 
-    public Text getmemberId(String memberId){
-        Optional<Member> _member = this.memberRepository.findByMemberId(memberId);
+    public Text getmemberId(Principal principal){
+        Optional<Member> _member = this.memberRepository.findByMemberId(principal.getName());
         if(_member.isPresent()){
             _member.get();
         }else {throw new DataNotFoundException("member not found");

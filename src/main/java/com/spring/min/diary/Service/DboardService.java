@@ -53,8 +53,8 @@ public class DboardService {
         this.dboardRepository.save(q);
     }
 
-    public List<Dboard> getAllList(String memberId){
-        Optional<Member> _member = this.memberRepository.findByMemberId(memberId);
+    public List<Dboard> getAllList(Principal principal){
+        Optional<Member> _member = this.memberRepository.findByMemberId(principal.getName());
         if(_member.isPresent()){
             _member.get();
         }else {
@@ -75,5 +75,32 @@ public class DboardService {
         }
         Dboard dboard = _dboard.get();
         this.dboardRepository.delete(dboard);
+    }
+
+    public void modify(Integer id, MultipartFile file,Dboard dboard) throws Exception {
+
+        Optional<Dboard> _dboard = this.dboardRepository.findById(id);
+        if(_dboard.isPresent()){
+            _dboard.get();
+        }else{
+            throw new DataNotFoundException("dboard not found");
+        }
+        Dboard q = _dboard.get();
+        String projectPath = System.getProperty("user.dir") + "/src/main/resources/static/files";   //경로 지정
+
+        UUID uuid = UUID.randomUUID();      //익명 생성
+
+        String fileName = uuid + "_" + file.getOriginalFilename();  //익명+파일이름 자동으로 연결 해서 생성
+
+        File saveFile = new File(projectPath, fileName);
+
+        file.transferTo(saveFile);
+
+        q.setTitle(dboard.getTitle());
+        q.setContent(dboard.getContent());
+        q.setCreateDate(LocalDateTime.now());
+        q.setFilename(fileName);
+        q.setFilepath("/files/" + fileName);
+        this.dboardRepository.save(q);
     }
 }
