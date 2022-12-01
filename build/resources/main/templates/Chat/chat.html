@@ -84,8 +84,8 @@
     function onMessage(msg) {
       var data = msg.data;
       // 데이터를 보낸 사람
-      var sessionId = null;
-      var message = null;
+      var sessionId = 'guest';
+      var message = 'guest';
       var arr = data.split(/\:/);
       // 현재 세션에 로그인 한 사람
       var cur_session = username;

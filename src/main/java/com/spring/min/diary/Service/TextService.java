@@ -38,8 +38,18 @@ public class TextService {
 
 
     public Text getmemberId(String memberId){
-        Optional<Member> member = this.memberRepository.findByMemberId(memberId);
-        Optional<Text> text = this.textRepository.findByMember(member.get());
+        Optional<Member> _member = this.memberRepository.findByMemberId(memberId);
+        if(_member.isPresent()){
+            _member.get();
+        }else {throw new DataNotFoundException("member not found");
+        }
+        Member member = _member.get();
+        Optional<Text> text = this.textRepository.findByMember(member);
+        if(text.isPresent()){
+            text.get();
+        }else{
+            throw new DataNotFoundException("text not found");
+        }
 
         return text.get();
     }

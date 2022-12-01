@@ -35,7 +35,7 @@
                 <li class="nav-item"><a sec:authorize="isAuthenticated()" class="nav-link"
                                         href="/member/logout">Logout</a></li>
                 <li th:each="member : ${memberList}" class="nav-item">
-                    <a th:href="@{|/member/myhome/${member.memberName}|}" sec:authorize="isAuthenticated()" class="nav-link" th:text="${member.memberName}">MyHome</a>
+                    <a th:href="@{|/member/myhome/${member.memberId}|}" sec:authorize="isAuthenticated()" class="nav-link" th:text="${member.memberId}">MyHome</a>
                 </li>
                 <li class="nav-item"><a sec:authorize="isAuthenticated()" class="nav-link"
                                         href="/member/new/edit">New MyHome</a></li>
