@@ -17,29 +17,27 @@
 </head>
 
 <body>
+
 <div class="my-3">
     <div>
-        <a class="navbar-brand" href="/"><h2>Diary</h2></a>
+        <a class="navbar-brand" href="/static"><h2>Diary</h2></a>
     </div>
 </div>
-<div class="container my-3">
-    <table class="table">
-        <thead class="bg-warning">
-        <tr>
-            <th>게시물</th>
-            <th>내용</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="boardList, loop : ${boardList}">
-            <td th:text="${loop.count}"></td>
-            <td>
-                <a href="#" th:text="${boardList.title}"></a>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+<form action="/member/board" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="title" class="form-label">제목</label>
+        <input type="text" name="title" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="content" class="form-label">내용</label>
+        <input type="text" name="content" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="file" class="form-label">파일</label>
+        <input type="file" name="file" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">생성완료</button>
+</form>
 </body>
 
 </html>

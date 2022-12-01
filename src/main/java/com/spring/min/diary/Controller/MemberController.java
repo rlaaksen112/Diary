@@ -33,17 +33,17 @@ public class MemberController {
     @GetMapping("/create")  //회원가입 페이지
     public String MemberCreate(MemberCreateForm memberCreateForm) {
 
-        return "member_create";
+        return "Member/member_create";
     }
 
     @PostMapping("/create") //회원가입 정보 전송
     public String MemberCreate2(@Valid MemberCreateForm memberCreateForm, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            return "member_create";
+            return "Member/member_create";
         }
         if (!memberCreateForm.getMemberPw().equals(memberCreateForm.getMemberPw2())) {
             bindingResult.rejectValue("memberPw2", "passwordInCorrect", "2개의 패스워드가 일치하지 않습니다.");
-            return "member_create";
+            return "Member/member_create";
         }
 
         try {
@@ -52,11 +52,11 @@ public class MemberController {
         } catch (DataIntegrityViolationException e) {
             e.printStackTrace();
             bindingResult.reject("signupFailed", "이미 등록된 사용자입니다.");
-            return "member_create";
+            return "Member/member_create";
         } catch (Exception e) {
             e.printStackTrace();
             bindingResult.reject("signupFailed", e.getMessage());
-            return "member_create";
+            return "Member/member_create";
         }
 
         return "redirect:/";
@@ -64,7 +64,7 @@ public class MemberController {
     // -----------------------------------------------------------------------------
     @GetMapping("/login")   //로그인 페이지
     public String login() {
-        return "login_form";
+        return "Member/login_form";
     }
 
     // -----------------------------------------------------------------------------
@@ -88,7 +88,7 @@ public class MemberController {
         model.addAttribute("board4", board4);
         model.addAttribute("board5", board5);
         model.addAttribute("board6", board6);
-        return "member_myhome";
+        return "Member/member_myhome";
     }
     // -----------------------------------------------------------------------------
     @GetMapping("/new/edit")        //최초 홈페이지 생성
@@ -97,7 +97,7 @@ public class MemberController {
             return "redirect:/member/login";
         }
 
-        return "member_newedit";
+        return "Member/member_newedit";
     }
 
     @PostMapping("/new/edit")
@@ -106,7 +106,7 @@ public class MemberController {
             return "redirect:/member/login";
         }
         if (bindingResult.hasErrors()) {
-            return "member_newedit";
+            return "Member/member_newedit";
         }
 
         this.textService.create(textCreateForm, principal);
@@ -117,7 +117,7 @@ public class MemberController {
     @GetMapping("/new/board")
     public String newboard(MultipartFile file1, MultipartFile file2, MultipartFile file3, MultipartFile file4, MultipartFile file5, MultipartFile file6,Principal principal){
 
-        return "member_board2";
+        return "Member/member_board2";
     }
 
     @PostMapping("/new/board")
@@ -131,7 +131,7 @@ public class MemberController {
     @GetMapping("/new/profil")
     public String newprofil(Principal principal){
 
-        return "member_profil";
+        return "Member/member_profil";
     }
     @PostMapping("/new/profil")
     public String newprofil2(MultipartFile file,String profilName,String profilTalk, Principal principal)throws Exception{
@@ -149,20 +149,20 @@ public class MemberController {
         List<Board> boardList = this.boardService.getAllList(memberId);
         model.addAttribute("boardList",boardList);
 
-        return "member_boardlist";
+        return "Member/member_boardlist";
     }
     // -----------------------------------------------------------------------------
     @GetMapping("/board")
     public String board(Board board){
 
-        return "member_board";
+        return "Member/member_board";
     }
     @PostMapping("/board")
     public String boardForm(Board board, MultipartFile file,Principal principal) throws  Exception{
 
         this.boardService.create(board,file,principal);
 
-        return "member_board";
+        return "Member/member_board";
     }
     // -----------------------------------------------------------------------------
 }
