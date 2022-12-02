@@ -103,4 +103,15 @@ public class DboardService {
         q.setFilepath("/files/" + fileName);
         this.dboardRepository.save(q);
     }
+
+    public Dboard getId(Integer id){
+        Optional<Dboard> q = this.dboardRepository.findById(id);
+        if(q.isPresent()){
+            q.get();
+        }else{
+            throw new DataNotFoundException("Dboard not found");
+        }
+        Dboard dboard = q.get();
+        return dboard;
+    }
 }

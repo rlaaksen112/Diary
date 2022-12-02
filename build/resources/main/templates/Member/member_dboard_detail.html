@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Record of Daily Life</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../../static/home/assets/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/home/css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Navigation-->
+<div class="my-3">
+    <div>
+        <a class="navbar-brand" href="/"><h2>Diary</h2></a>
+    </div>
+</div>
+<!-- Page Content-->
+<header class="masthead2">
+    <div class="container">
+        <img class="img-fluid" th:src="${dboard.getFilepath()}" alt="..."/>
+        <div class="masthead-subheading" th:text="${dboard.getTitle()}">Diary</div>
+        <div class="masthead-heading text-uppercase" th:text="${dboard.getContent()}">Record of Daily Life</div>
+        <a href="#">sds</a>
+    </div>
+</header>
+<!--                        <img class="img-fluid" th:src="${dboard.getFilepath()}" alt="..."/>-->
+<!--                    </a>-->
+<!--                    <div class="portfolio-caption">-->
+<!--                        <div class="portfolio-caption-heading" th:text="${dboard.getTitle()}">피드2 제목</div>-->
+
+</body>
+</html>

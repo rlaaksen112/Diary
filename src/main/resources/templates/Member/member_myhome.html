@@ -38,7 +38,7 @@
                     <a sec:authorize="isAuthenticated()" href="/member/boardlist" class="nav-link">Daliy Board</a>
                 </li>
                 <li class="nav-item"><a class="nav-link"
-                                        href="/member/board">Daily Board Edit</a></li>
+                                        href="/member/edit">Edit</a></li>
             </ul>
         </div>
     </div>
@@ -46,7 +46,7 @@
 <!-- Title-->
 <header class="masthead">
     <div class="container">
-        <div class="masthead-subheading" th:text="${text.getMainTitle()}">Diary</div>
+        <div class="masthead-subheading" th:text="${text.getMainTitle()}" th:href="@{|/member/title/${text.getTextCode()}|}"></div>
         <div class="masthead-heading text-uppercase" th:text="${text.getMainContents()}">Record of Daily Life</div>
         <a class="btn btn-primary btn-xl text-uppercase" href="/chat">Go Chat</a>
     </div>
@@ -68,9 +68,6 @@
                         </div>
                         <img class="img-fluid" th:src="${board1.getFilepath()}" alt="..."/>
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" th:text="${board1.getTitle()}">피드1 제목</div>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4">
@@ -82,9 +79,6 @@
                         </div>
                         <img class="img-fluid" th:src="${board2.getFilepath()}" alt="..."/>
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" th:text="${board2.getTitle()}">피드2 제목</div>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4">
@@ -96,9 +90,7 @@
                         </div>
                         <img class="img-fluid" th:src="${board3.getFilepath()}" alt="..."/>
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" th:text="${board3.getTitle()}">피드3 제목</div>
-                    </div>
+
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
@@ -110,9 +102,6 @@
                         </div>
                         <img class="img-fluid" th:src="${board4.getFilepath()}" alt="..."/>
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" th:text="${board4.getTitle()}">피드4 제목</div>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
@@ -124,9 +113,6 @@
                         </div>
                         <img class="img-fluid" th:src="${board5.getFilepath()}" alt="..."/>
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" th:text="${board5.getTitle()}">피드5 제목</div>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
@@ -138,9 +124,6 @@
                         </div>
                         <img class="img-fluid" th:src="${board6.getFilepath()}" alt="..."/>
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" th:text="${board6.getTitle()}">피드6 제목</div>
-                    </div>
                 </div>
             </div>
         </div>

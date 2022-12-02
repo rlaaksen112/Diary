@@ -30,7 +30,6 @@
             <th>제목</th>
             <th>내용</th>
             <th>작성 일자</th>
-            <th>게시물 수정</th>
             <th>게시물 삭제</th>
         </tr>
         </thead>
@@ -38,16 +37,13 @@
         <tr th:each="boardList, loop : ${boardList}">
             <td th:text="${loop.count}"></td>
             <td>
-                <a href="#" th:text="${boardList.title}"></a>
+                <a th:href="@{|/member/detail/${boardList.id}|}" th:text="${boardList.title}"></a>
             </td>
             <td>
-                <a href="#" th:text="${boardList.content}"></a>
+                <a th:text="${boardList.content}"></a>
             </td>
             <td>
-                <a href="#" th:text="${boardList.createDate}"></a>
-            </td>
-            <td>
-                <a th:href="@{|/member/board/modify/${boardList.Id}|}">수정</a>
+                <a th:text="${boardList.createDate}"></a>
             </td>
             <td>
                 <a th:href="@{|/member/board/delete/${boardList.Id}|}">삭제</a>

@@ -72,7 +72,7 @@ public class MemberController {
 
     // -----------------------------------------------------------------------------
     //마이홈
-    @GetMapping("/myhome")
+    @GetMapping("/myhome")      //마이홈 홈페이지
     public String myhome(Model model,Principal principal) {
         Text text = this.textService.getmemberId(principal); //메인,데일리 타이틀 및 내용
         model.addAttribute("text",text);
@@ -157,6 +157,14 @@ public class MemberController {
 
         return "Member/member_boardlist";
     }
+    @GetMapping("/detail/{id}")
+    public String boardDetail(@PathVariable("id") Integer id,Model model){
+        Dboard dboard = this.dboardService.getId(id);
+        model.addAttribute("dboard",dboard);
+
+        return "Member/member_dboard_detail";
+    }
+
     @GetMapping("/board")   //데일리보드 등록 폼
     public String board(Board board){
 
@@ -167,7 +175,7 @@ public class MemberController {
 
         this.dboardService.create(dboard,file,principal);
 
-        return "Member/member_board";
+        return "redirect:/member/boardlist";
     }
 //    @GetMapping("/board/modify/{id}")   //게시물 수정
 //    public String modify(@PathVariable("id") Integer id , Principal principal,Dboard dboard){
