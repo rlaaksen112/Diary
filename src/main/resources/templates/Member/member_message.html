@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홈페이지 생성</title>
+
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="/home/css/styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="my-3">
+  <div>
+    <a class="navbar-brand" href="/"><h2>Diary</h2></a>
+  </div>
+</div>
+<div class="container my-3">
+  <table class="table">
+    <thead class="bg-warning">
+    <tr>
+      <th>순번</th>
+      <th>제목</th>
+      <th>내용</th>
+      <th>보낸사람</th>
+      <th>발송 일자</th>
+<!--      <th>쪽지 삭제</th>-->
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="messages, loop : ${messages}">
+      <td th:text="${loop.count}"></td>
+<!--      <td>-->
+<!--        <a th:href="@{|/member/detail/${boardList.id}|}" th:text="${boardList.title}"></a>-->
+<!--      </td>-->
+      <td>
+        <a th:text="${messages.messageTitle}" th:href="@{|/message/detail/${messages.id}|}"></a>
+      </td>
+      <td>
+        <a th:text="${messages.messageContent}"></a>
+      </td>
+      <td>
+        <a th:text="${messages.messageWrite}"></a>
+      </td>
+      <td>
+        <a th:text="${messages.createDate}"></a>
+      </td>
+<!--      <td>-->
+<!--        <a th:href="@{|/member/board/delete/${boardList.Id}|}">삭제</a>-->
+<!--      </td>-->
+    </tr>
+    <a href="/message/form">쪽지 보내기</a>
+    </tbody>
+  </table>
+</div>
+</body>
+
+</html>

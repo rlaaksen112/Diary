@@ -14,7 +14,8 @@ public class Liked {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer likeCode;
+    private Integer Id;
+
 
     private Integer thisLike;
 

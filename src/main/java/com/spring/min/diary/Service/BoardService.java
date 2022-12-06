@@ -176,5 +176,39 @@ public Board getfindIdAndTitle(String a,Principal principal) {      //피드 1~6
         return q;
     }
 
+    public void modify(MultipartFile file, Principal principal, String a) throws Exception {
+
+        String projectPath = System.getProperty("user.dir") + "/src/main/resources/static/files";   //경로 지정
+
+        UUID uuid = UUID.randomUUID();      //익명 생성
+
+        String fileName = uuid + "_" + file.getOriginalFilename();  //익명+파일이름 자동으로 연결 해서 생성
+
+        File saveFile = new File(projectPath, fileName);
+
+        file.transferTo(saveFile);
+
+        Optional<Member> _member = this.memberRepository.findByMemberId(principal.getName());
+        if (_member.isPresent()) {
+            _member.get();
+        } else {
+            throw new DataNotFoundException("member not found");
+        }
+        Member member = _member.get();
+
+        Optional<Board> _board = this.boardRepository.findByTitleAndMember(a,member);
+        if(_board.isPresent()){
+            _board.get();
+        }else{
+            throw new DataNotFoundException("Board not found");
+        }
+        Board q = _board.get();
+
+        q.setCreateDate(LocalDateTime.now());
+        q.setFilename(fileName);
+        q.setFilepath("/files/" + fileName);
+        this.boardRepository.save(q);
+    }
+
 
 }

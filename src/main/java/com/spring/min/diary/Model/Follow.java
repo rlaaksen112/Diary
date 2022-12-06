@@ -14,7 +14,7 @@ public class Follow {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer followCode;
+    private Integer Id;
 
     private String follower; //팔로워
 

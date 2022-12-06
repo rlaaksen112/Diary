@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -15,13 +16,15 @@ public class Message {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer messageCode;
+    private Integer Id;
 
     private String messageTitle;
 
     private String messageContent;
 
     private String messageWrite;
+
+    private LocalDateTime createDate;
 
     @ManyToOne
     @JoinColumn(name = "MEMBER_CODE")

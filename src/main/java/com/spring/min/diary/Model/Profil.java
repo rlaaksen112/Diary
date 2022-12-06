@@ -15,10 +15,10 @@ public class Profil {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer profilCode;
 
-    @Column(length = 30 , unique = true)
+    @Column(length = 30 )
     private String profilName;
 
-    @Column(length = 100, unique = true)
+    @Column(length = 100)
     private String profilTalk;
 
     private String filename;

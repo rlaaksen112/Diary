@@ -82,7 +82,7 @@ public class ProfilService {
         }else{
             throw new DataNotFoundException("Profil not found");
         }
-        Profil q = profil;
+        Profil q = profil1.get();
         String projectPath = System.getProperty("user.dir") + "/src/main/resources/static/files";   //경로 지정
         UUID uuid = UUID.randomUUID();      //익명 생성
 
@@ -92,7 +92,6 @@ public class ProfilService {
 
         file.transferTo(saveFile);
 
-        q.setMember(member);
         q.setProfilName(profil.getProfilName());
         q.setProfilTalk(profil.getProfilTalk());
         q.setFilename(fileName);

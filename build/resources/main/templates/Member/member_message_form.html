@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쪽지확인</title>
+
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="/home/css/styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="my-3">
+  <div>
+    <a class="navbar-brand" href="/"><h2>Diary</h2></a>
+  </div>
+</div>
+<div layout:fragment="content" class="container">
+  <h5 class="my-3 border-bottom pb-2">쪽지작성</h5>
+  <form action="/message/form" method="post">
+    <div class="mb-3">
+      <label for="name" class="form-label">보내는이</label>
+      <input type="text" name="name"  class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="messageTitle" class="form-label">제목</label>
+      <input type="text" name="messageTitle" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="messageContent" class="form-label">내용</label>
+      <textarea name="messageContent" class="form-control" rows="10"></textarea>
+    </div>
+    <input type="submit" value="저장하기" class="btn btn-primary my-2">
+  </form>
+</div>
+</body>
+
+</html>

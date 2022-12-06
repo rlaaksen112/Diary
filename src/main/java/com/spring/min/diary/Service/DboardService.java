@@ -95,7 +95,6 @@ public class DboardService {
         File saveFile = new File(projectPath, fileName);
 
         file.transferTo(saveFile);
-
         q.setTitle(dboard.getTitle());
         q.setContent(dboard.getContent());
         q.setCreateDate(LocalDateTime.now());
