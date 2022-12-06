@@ -94,6 +94,17 @@ public class MemberController {
         model.addAttribute("profil",profil);
         return "Member/member_myhome";
     }
+
+    @GetMapping("/profil/modify")
+    public String profilModify(Profil profil,MultipartFile file,Principal principal)throws Exception{
+
+        return "Member/member_profil_modify";
+    }
+    @PostMapping("/profil/modify")
+    public String profilModify2(Profil profil,MultipartFile file,Principal principal)throws Exception{
+        this.profilService.modify(profil,file,principal);
+        return "redirect:/member/myhome";
+    }
     // -----------------------------------------------------------------------------
     //최초 홈페이지 생성
     @GetMapping("/new/edit")
@@ -177,15 +188,17 @@ public class MemberController {
 
         return "redirect:/member/boardlist";
     }
-//    @GetMapping("/board/modify/{id}")   //게시물 수정
-//    public String modify(@PathVariable("id") Integer id , Principal principal,Dboard dboard){
-//        return "Member/member_dboard_modify";
-//    }
-//    @PostMapping("/board/modify/{id}")
-//    public String modify2(@PathVariable("id") Integer id , MultipartFile file,Dboard dboard)throws Exception{
-//        this.dboardService.modify(id,file,dboard);
-//        return "redirect:/member/boardlist";
-//    }
+    @GetMapping("/modify/{id}")   //게시물 수정
+    public String modify(@PathVariable("id") Integer id , Principal principal,Dboard dboard,MultipartFile file)throws Exception{
+
+
+        return "Member/member_dboard_modify";
+    }
+    @PostMapping("/modify/{id}")
+    public String modify2(@PathVariable("id") Integer id  , MultipartFile file,Dboard dboard)throws Exception{
+        this.dboardService.modify(id,file,dboard);
+        return "redirect:/member/boardlist";
+    }
 
     @GetMapping("/board/delete/{id}")
     public String delete(@PathVariable("id") Integer id,Principal principal){

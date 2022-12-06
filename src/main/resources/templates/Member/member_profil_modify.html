@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>프로필 생성</title>
+<title>프로필 변경</title>
 
 <!-- Font Awesome icons (free version)-->
 <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
     <a class="navbar-brand" href="/"><h2>Diary</h2></a>
   </div>
 </div>
-<form action="/member/new/profil" method="post" enctype="multipart/form-data">
+<form action="/member/profil/modify" method="post" enctype="multipart/form-data">
   <div class="mb-3">
     <label for="file" class="form-label">프로필 사진</label>
     <input type="file" name="file" class="form-control">
@@ -32,7 +32,7 @@
     <label for="profilTalk" class="form-label">한마디</label>
     <input type="text" name="profilTalk" class="form-control">
   </div>
-  <button type="submit" class="btn btn-primary">생성완료</button>
+  <button type="submit" class="btn btn-primary">변경완료</button>
 </form>
 </body>
 

@@ -23,7 +23,7 @@
         <a class="navbar-brand" href="/"><h2>Diary</h2></a>
     </div>
 </div>
-<form th:action="@{|/member/board/modify/${boardList.Id}|}" method="post" enctype="multipart/form-data">
+<form th:action="@{|/member/modify/${dboard.getId()}|}" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="title" class="form-label">제목</label>
         <input type="text" name="title" class="form-control">

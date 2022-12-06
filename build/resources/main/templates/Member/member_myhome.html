@@ -46,7 +46,8 @@
 <!-- Title-->
 <header class="masthead">
     <div class="container">
-        <div class="masthead-subheading" th:text="${text.getMainTitle()}" th:href="@{|/member/title/${text.getTextCode()}|}"></div>
+        <div class="masthead-subheading" th:text="${text.getMainTitle()}"
+             th:href="@{|/member/title/${text.getTextCode()}|}"></div>
         <div class="masthead-heading text-uppercase" th:text="${text.getMainContents()}">Record of Daily Life</div>
         <a class="btn btn-primary btn-xl text-uppercase" href="/chat">Go Chat</a>
     </div>
@@ -154,12 +155,8 @@
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" th:src="${profil.getFilepath()}" alt="..."/>
                     <h4></h4>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.naver.com/" aria-label="Diana Petersen Twitter Profile"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i
-                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="/member/profil/modify" aria-label="Diana Petersen LinkedIn Profile"><i
+                            class="fas fa-user-edit"></i></a>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -169,15 +166,16 @@
                     <p class="text-muted">Lead Developer</p>
                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i
                             class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i
-                            class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i
                             class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i
+                            class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-8 mx-auto text-center"><p th:text="${profil.getMember().getMemberName()}" class="large text-muted">이름</p></div>
+            <div class="col-lg-8 mx-auto text-center"><p th:text="${profil.getMember().getMemberName()}"
+                                                         class="large text-muted">이름</p></div>
         </div>
     </div>
 </section>

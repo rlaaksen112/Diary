@@ -29,13 +29,8 @@
         <img class="img-fluid" th:src="${dboard.getFilepath()}" alt="..."/>
         <div class="masthead-subheading" th:text="${dboard.getTitle()}">Diary</div>
         <div class="masthead-heading text-uppercase" th:text="${dboard.getContent()}">Record of Daily Life</div>
-        <a href="#">sds</a>
+        <a th:href="@{|/member/modify/${dboard.getId()}|}">수정하기</a>
     </div>
 </header>
-<!--                        <img class="img-fluid" th:src="${dboard.getFilepath()}" alt="..."/>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <div class="portfolio-caption-heading" th:text="${dboard.getTitle()}">피드2 제목</div>-->
-
 </body>
 </html>

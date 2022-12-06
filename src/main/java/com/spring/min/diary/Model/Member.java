@@ -42,4 +42,13 @@ public class Member {
 
     @OneToMany(mappedBy = "member")
     private List<Profil> profils;
+
+    @OneToMany(mappedBy = "member")
+    private List<Liked> likes;
+
+    @OneToMany(mappedBy = "member")
+    private List<Message> messages;
+
+    @OneToMany(mappedBy = "member")
+    private List<Follow> follows;
 }

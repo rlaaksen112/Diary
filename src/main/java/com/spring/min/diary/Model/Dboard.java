@@ -6,6 +6,7 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
@@ -30,4 +31,7 @@ public class Dboard {
     @ManyToOne
     @JoinColumn(name = "MEMBER_CODE")
     private Member member;
+
+    @OneToMany(mappedBy = "dboard")
+    private List<Liked> likes;
 }
