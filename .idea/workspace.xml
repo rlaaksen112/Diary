@@ -5,95 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80747417-79db-4aa5-8294-140db11fcf9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/MessageService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/309c5502-af16-403f-b27b-8aceb4c10455_7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/6d2f4aa1-1f8b-4ca9-9840-6ae0c2601884_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/files/8b542888-f933-4aad-84db-a2a39cfeaf0a_7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_board_modify.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_message_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/240c9a70-4e2f-4416-aa20-a463602d5355_6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/309c5502-af16-403f-b27b-8aceb4c10455_7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/6d2f4aa1-1f8b-4ca9-9840-6ae0c2601884_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/8b542888-f933-4aad-84db-a2a39cfeaf0a_7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_board_modify.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_message_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_message_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Follow.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Follow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Liked.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Liked.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Profil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Profil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Repository/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Repository/MessageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/BoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/DboardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/DboardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/ProfilService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/ProfilService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/240d12fd-4024-4e6c-931d-f1019e2cccfd_스크린샷 2022-12-05 오후 4.30.31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/3d7d2241-a407-453b-826c-61abada8860a_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/files/3115f668-a991-47e1-839d-89807652edce_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/603930e4-9969-4d71-bbc3-ee65e6f05880_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/files/9c37bc92-bd85-4580-9ff7-6b15152227fc_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/664ba400-16eb-47ef-9453-db306235f5be_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/files/cc90cb62-66ed-44d1-911e-e697e0773a49_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/664ba400-16eb-47ef-9453-db306235f5be_Search Results for “patrick star desktop wallpaper” – Adorable Wallpapers.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/664ba400-16eb-47ef-9453-db306235f5be_Tyler The Creator Wallpaper - Wallpaper Sun.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/664ba400-16eb-47ef-9453-db306235f5be_bear wallpaper pc Mac 네이버 아이콘 곰.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/664ba400-16eb-47ef-9453-db306235f5be_✧･ﾟ_ _✧aesthetic magical sparkle ✧･ﾟ_ _✧.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/664ba400-16eb-47ef-9453-db306235f5be_스크린샷 2022-12-05 오후 4.30.31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/8fa7e4e6-7560-40fb-99d2-8951f0751fa8_스크린샷 2022-12-05 오후 4.30.31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/adfa1fa6-390a-4c1d-963f-51a26fbdb34f_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/files/d773f475-ff14-4db0-a054-de65339ba231_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/files/dcf81e56-82b1-42ca-84e7-2a490d898387_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Member/member_boardlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_boardlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Member/member_dboard_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_dboard_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Member/member_myhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Member/member_myhome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Follow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Follow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Liked.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Liked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Profil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Profil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/MessageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/DboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/DboardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/ProfilService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/ProfilService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/240d12fd-4024-4e6c-931d-f1019e2cccfd_스크린샷 2022-12-05 오후 4.30.31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/3d7d2241-a407-453b-826c-61abada8860a_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/files/3115f668-a991-47e1-839d-89807652edce_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/603930e4-9969-4d71-bbc3-ee65e6f05880_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/files/9c37bc92-bd85-4580-9ff7-6b15152227fc_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/664ba400-16eb-47ef-9453-db306235f5be_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/files/cc90cb62-66ed-44d1-911e-e697e0773a49_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/664ba400-16eb-47ef-9453-db306235f5be_Search Results for “patrick star desktop wallpaper” – Adorable Wallpapers.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/664ba400-16eb-47ef-9453-db306235f5be_Tyler The Creator Wallpaper - Wallpaper Sun.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/664ba400-16eb-47ef-9453-db306235f5be_bear wallpaper pc Mac 네이버 아이콘 곰.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/664ba400-16eb-47ef-9453-db306235f5be_✧･ﾟ_ _✧aesthetic magical sparkle ✧･ﾟ_ _✧.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/664ba400-16eb-47ef-9453-db306235f5be_스크린샷 2022-12-05 오후 4.30.31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/8fa7e4e6-7560-40fb-99d2-8951f0751fa8_스크린샷 2022-12-05 오후 4.30.31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/9a40e2fc-c92f-448a-8d68-753e3ea14a02_스크린샷 2022-12-05 오후 4.30.31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/adfa1fa6-390a-4c1d-963f-51a26fbdb34f_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/files/d773f475-ff14-4db0-a054-de65339ba231_F47A055F-1F76-4162-95C7-B9184C1994DA.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/files/dcf81e56-82b1-42ca-84e7-2a490d898387_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/member_boardlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_boardlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/member_dboard_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_dboard_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/member_myhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/member_myhome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +103,7 @@
       <workItem from="1670290228531" duration="3842000" />
       <workItem from="1670294085608" duration="5517000" />
       <workItem from="1670304224331" duration="816000" />
-      <workItem from="1670305047951" duration="2117000" />
+      <workItem from="1670305047951" duration="4147000" />
     </task>
     <servers />
   </component>
