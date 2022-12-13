@@ -9,10 +9,7 @@ import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
@@ -216,4 +213,11 @@ public class MemberController {
         return "redirect:/member/boardlist";
     }
     // -----------------------------------------------------------------------------
+    @GetMapping("/random")
+    public String random(Model model){
+        Member member = this.memberService.random();
+        model.addAttribute("member",member);
+        return "Member/test";
+    }
+
 }

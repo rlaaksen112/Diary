@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @RequiredArgsConstructor
 @Service
@@ -43,6 +44,18 @@ public class MemberService {
         Member member = a.get();
 
         return member;
+    }
+
+    public Member random(){
+        List<Member> _member= this.memberRepository.findAll();
+        Integer aa = _member.get(0).getMemberCode();
+        Optional<Member> member = this.memberRepository.findById(aa);
+        if(member.isPresent()){
+            member.get();
+        }else{
+            throw new DataNotFoundException("memberNotFound");
+        }
+        return member.get();
     }
 
 }

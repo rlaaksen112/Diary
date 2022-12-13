@@ -1,6 +1,7 @@
 package com.spring.min.diary.Model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -35,20 +36,26 @@ public class Member {
     private String memberBirth;
 
     @OneToMany(mappedBy = "member")
+    @JsonIgnore
     private List<Board> boards;
 
     @OneToMany(mappedBy = "member")
+    @JsonIgnore
     private List<Text> texts;
 
     @OneToMany(mappedBy = "member")
+    @JsonIgnore
     private List<Profil> profils;
 
     @OneToMany(mappedBy = "member")
+    @JsonIgnore
     private List<Liked> likes;
 
     @OneToMany(mappedBy = "member")
+    @JsonIgnore
     private List<Message> messages;
 
     @OneToMany(mappedBy = "member")
+    @JsonIgnore
     private List<Follow> follows;
 }
