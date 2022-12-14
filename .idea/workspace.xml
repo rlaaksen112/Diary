@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80747417-79db-4aa5-8294-140db11fcf9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Member/random_home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,21 +14,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Chating/ChatHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Chating/ChatHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Controller/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Model/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Repository/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Repository/MemberRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/min/diary/Service/BoardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Member/test.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Chating/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Chating/ChatHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Text.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Follow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Model/Liked.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/FollowRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/LikedRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/min/diary/Service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +126,8 @@
       <workItem from="1670305047951" duration="4147000" />
       <workItem from="1670390188220" duration="857000" />
       <workItem from="1670394838943" duration="3748000" />
-      <workItem from="1670911749706" duration="7654000" />
+      <workItem from="1670911749706" duration="11014000" />
+      <workItem from="1670987091077" duration="4649000" />
     </task>
     <servers />
   </component>

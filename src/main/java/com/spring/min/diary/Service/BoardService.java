@@ -160,7 +160,13 @@ public Board getfindIdAndTitle(String a,Principal principal) {      //피드 1~6
     Board board = q.get();
     return board;
 }
+    public Board getfindIdAndTitle2(String a,Member member) {      //피드 1~6 랜덤 페이지
 
+        Optional<Board> q = this.boardRepository.findByTitleAndMember(a,member);
+        System.out.println("@@@@@@@@@"+ q.toString());
+        Board board = q.get();
+        return board;
+    }
     public List<Board> getAllList(String memberId) {
         Optional<Member> _member = this.memberRepository.findByMemberId(memberId);
         if (_member.isPresent()) {

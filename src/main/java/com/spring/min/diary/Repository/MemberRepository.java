@@ -16,5 +16,5 @@ public interface MemberRepository extends JpaRepository<Member, Integer> {
         //limit == 제한 한개만.
         // order by RAND() limit 1 == 정렬시키는데 랜덤으로 정렬 근데 리밋트 하나만
     @Query(value = "SELECT * FROM member order by RAND() limit 1",nativeQuery = true)
-    List<Member>findAll();
+    List<Member> findAll();
 }

@@ -5,7 +5,6 @@ import com.spring.min.diary.Model.*;
 import com.spring.min.diary.Service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -213,11 +212,25 @@ public class MemberController {
         return "redirect:/member/boardlist";
     }
     // -----------------------------------------------------------------------------
-    @GetMapping("/random")
+    @GetMapping("/random")  //랜덤 페이지 방문
     public String random(Model model){
         Member member = this.memberService.random();
+        Board board1 = this.boardService.getfindIdAndTitle2("1",member);
+        Board board2 = this.boardService.getfindIdAndTitle2("2",member);
+        Board board3 = this.boardService.getfindIdAndTitle2("3",member);
+        Board board4 = this.boardService.getfindIdAndTitle2("4",member);
+        Board board5 = this.boardService.getfindIdAndTitle2("5",member);
+        Board board6 = this.boardService.getfindIdAndTitle2("6",member);
+
         model.addAttribute("member",member);
-        return "Member/test";
+        model.addAttribute("board1",board1);
+        model.addAttribute("board2",board2);
+        model.addAttribute("board3",board3);
+        model.addAttribute("board4",board4);
+        model.addAttribute("board5",board5);
+        model.addAttribute("board6",board6);
+
+        return "Member/random_home";
     }
 
 }
